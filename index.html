@@ -33,11 +33,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-3">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Capabilities</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn-outline-primary btn-sm rounded-pill px-3">Get in Touch</a>
+        <a href="mailto:contact@holz.one?subject=Inquiry%20from%20HOLZ.one" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+          <i class="bi bi-envelope me-1"></i> Get in Touch
+        </a>
       </div>
     </div>
   </nav>
@@ -55,55 +57,179 @@
             Engineering your data forest
           </h1>
           <p class="lead text-body-secondary mb-4">
-            Architecting robust data infrastructure, backend systems, and scalable pipeline solutions.
+            Architecting robust data infrastructure, local AI applications, and specialized backend systems.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#services" class="btn btn-primary btn-lg px-4 gap-3">Explore Solutions</a>
-            <a href="#contact" class="btn btn-outline-secondary btn-lg px-4">Contact Us</a>
+            <a href="#projects" class="btn btn-primary btn-lg px-4 gap-3">View Projects</a>
+            <a href="https://github.com/holz-one" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-lg px-4">
+              <i class="bi bi-github me-2"></i>GitHub Profile
+            </a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5 bg-body border-top border-bottom">
+  <!-- Featured GitHub Projects Section -->
+  <section id="projects" class="py-5 bg-body border-top border-bottom">
+    <div class="container py-4">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <h2 class="fw-bold mb-1">Open Source & Projects</h2>
+          <p class="text-body-secondary mb-0">Active repositories and tooling built for modern backend infrastructure</p>
+        </div>
+        <a href="https://github.com/holz-one" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary rounded-pill px-3 d-none d-md-inline-block">
+          View all on GitHub <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1: salamcast -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge text-bg-primary">Python / PyPI</span>
+                <a href="https://github.com/holz-one/salamcast" target="_blank" rel="noopener" class="text-body-secondary"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <h3 class="h5 card-title fw-bold">salamcast</h3>
+              <p class="card-text text-body-secondary flex-grow-1">
+                A Python library for generating RSS 2.0 and iTunes-compatible podcast XML feeds for Flask applications and web servers.
+              </p>
+              <div class="mt-3 pt-3 border-top d-flex gap-2">
+                <span class="badge bg-body text-body-secondary border">Python</span>
+                <span class="badge bg-body text-body-secondary border">PyPI</span>
+                <span class="badge bg-body text-body-secondary border">RSS XML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: HomeLabPodcastSrv -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge text-bg-success">Flask / AI</span>
+                <a href="https://github.com/holz-one/HomeLabPodcastSrv" target="_blank" rel="noopener" class="text-body-secondary"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <h3 class="h5 card-title fw-bold">HomeLabPodcastSrv</h3>
+              <p class="card-text text-body-secondary flex-grow-1">
+                Self-hosted media server integrating local Whisper speech-to-text, Ollama AI summaries, DuckDB caching, and web audio playback.
+              </p>
+              <div class="mt-3 pt-3 border-top d-flex gap-2">
+                <span class="badge bg-body text-body-secondary border">Flask</span>
+                <span class="badge bg-body text-body-secondary border">DuckDB</span>
+                <span class="badge bg-body text-body-secondary border">Whisper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: WebMap -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge text-bg-info text-white">Networking</span>
+                <a href="https://github.com/holz-one/WebMap" target="_blank" rel="noopener" class="text-body-secondary"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <h3 class="h5 card-title fw-bold">WebMap</h3>
+              <p class="card-text text-body-secondary flex-grow-1">
+                Network scanning utility and dynamic mapping dashboard featuring Nmap background execution and structured logging.
+              </p>
+              <div class="mt-3 pt-3 border-top d-flex gap-2">
+                <span class="badge bg-body text-body-secondary border">Nmap</span>
+                <span class="badge bg-body text-body-secondary border">Python</span>
+                <span class="badge bg-body text-body-secondary border">Flask</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Homelab Cluster & Infrastructure -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge text-bg-warning">Infrastructure</span>
+                <a href="https://github.com/holz-one" target="_blank" rel="noopener" class="text-body-secondary"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <h3 class="h5 card-title fw-bold">ARM Homelab Cluster Automation</h3>
+              <p class="card-text text-body-secondary flex-grow-1">
+                Configuration and orchestration setups for single-board ARM clusters running distributed workloads across DietPi node architectures.
+              </p>
+              <div class="mt-3 pt-3 border-top d-flex gap-2">
+                <span class="badge bg-body text-body-secondary border">ARM64</span>
+                <span class="badge bg-body text-body-secondary border">DietPi</span>
+                <span class="badge bg-body text-body-secondary border">Linux Systemd</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Local Vision & Document Pipelines -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge text-bg-purple text-white bg-secondary">Data Pipelines</span>
+                <a href="https://github.com/holz-one" target="_blank" rel="noopener" class="text-body-secondary"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <h3 class="h5 card-title fw-bold">Local Vision & Metadata Processing</h3>
+              <p class="card-text text-body-secondary flex-grow-1">
+                Automated content ingestion pipelines leveraging local vision models, embedded DuckDB caching, and asset categorization.
+              </p>
+              <div class="mt-3 pt-3 border-top d-flex gap-2">
+                <span class="badge bg-body text-body-secondary border">Ollama</span>
+                <span class="badge bg-body text-body-secondary border">DuckDB</span>
+                <span class="badge bg-body text-body-secondary border">LLaVA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="services" class="py-5">
     <div class="container py-4">
       <div class="text-center mb-5">
         <h2 class="fw-bold">Core Capabilities</h2>
-        <p class="text-body-secondary">Building resilient systems from the ground up</p>
+        <p class="text-body-secondary">Cultivating efficient systems from database engines to local AI</p>
       </div>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+          <div class="card h-100 border-0 bg-body shadow-sm">
             <div class="card-body p-4">
               <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3 d-inline-flex align-items-center justify-content-center px-3 py-2">
-                <i class="bi bi-diagram-3 fs-4"></i>
+                <i class="bi bi-database-gear fs-4"></i>
               </div>
-              <h3 class="h5 card-title fw-bold">Data Architecture</h3>
-              <p class="card-text text-body-secondary">Designing scalable, high-throughput database schemas and distributed streaming pipelines tailored for complex analytical workloads.</p>
+              <h3 class="h5 card-title fw-bold">Data Architecture & Caching</h3>
+              <p class="card-text text-body-secondary">Designing embedded and relational storage systems using DuckDB, PostgreSQL, and SQLite for high-performance data operations.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+          <div class="card h-100 border-0 bg-body shadow-sm">
             <div class="card-body p-4">
               <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3 d-inline-flex align-items-center justify-content-center px-3 py-2">
                 <i class="bi bi-cpu fs-4"></i>
               </div>
-              <h3 class="h5 card-title fw-bold">Backend Infrastructure</h3>
-              <p class="card-text text-body-secondary">Building lightweight, secure microservices and modern APIs engineered for low latency and high reliability.</p>
+              <h3 class="h5 card-title fw-bold">Python Infrastructure & AI</h3>
+              <p class="card-text text-body-secondary">Building lightweight backend servers, API pipelines, and integrating local inference engines (Whisper, Ollama) directly into application workflows.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
+          <div class="card h-100 border-0 bg-body shadow-sm">
             <div class="card-body p-4">
               <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3 d-inline-flex align-items-center justify-content-center px-3 py-2">
-                <i class="bi bi-hdd-network fs-4"></i>
+                <i class="bi bi-terminal fs-4"></i>
               </div>
-              <h3 class="h5 card-title fw-bold">System Optimization</h3>
-              <p class="card-text text-body-secondary">Fine-tuning hardware execution, distributed processing jobs, and localized AI application workflows.</p>
+              <h3 class="h5 card-title fw-bold">Linux & Systems Tooling</h3>
+              <p class="card-text text-body-secondary">Developing desktop automation scripts, network diagnostic interfaces, and custom operational environments across modern Linux systems.</p>
             </div>
           </div>
         </div>
@@ -112,13 +238,17 @@
   </section>
 
   <!-- Contact / Footer Section -->
-  <footer id="contact" class="py-5 mt-auto">
+  <footer id="contact" class="py-5 border-top bg-body">
     <div class="container text-center">
       <h2 class="fw-bold mb-3">Let's Connect</h2>
-      <p class="text-body-secondary mb-4">Ready to cultivate your data infrastructure?</p>
+      <p class="text-body-secondary mb-4">Have a project, collaboration, or data infrastructure inquiry?</p>
       <div class="d-flex justify-content-center gap-3 mb-4">
-        <a href="mailto:salamcast@gmail.com" class="btn btn-primary rounded-pill px-4">
-          <i class="bi bi-envelope-fill me-2"></i>Email Us
+        <!-- Pre-filled email subject URL -->
+        <a href="mailto:contact@holz.one?subject=Inquiry%20from%20HOLZ.one" class="btn btn-primary rounded-pill px-4 btn-lg">
+          <i class="bi bi-envelope-fill me-2"></i>Send an Email
+        </a>
+        <a href="https://github.com/holz-one" target="_blank" rel="noopener" class="btn btn-outline-secondary rounded-pill px-4 btn-lg">
+          <i class="bi bi-github me-2"></i>GitHub
         </a>
       </div>
       <p class="text-body-tertiary small mb-0">&copy; <span id="year"></span> HOLZ.one. All rights reserved.</p>
@@ -126,17 +256,17 @@
   </footer>
 
   <!-- Bootstrap 5.3 JS Bundle CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <!-- Random Logo & UI Logic -->
+  <!-- Random Logo & Dynamic Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Set current year in footer
+      // Set current year in footer
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // 2. Randomly select logo from /image/logo1.jpeg through /image/logo6.jpeg
+      // Randomly select logo from /image/logo1.jpeg through /image/logo6.jpeg
       const logoCount = 6;
-      const randomIndex = Math.floor(Math.random() * logoCount) + 1; // Generates 1 to 6
+      const randomIndex = Math.floor(Math.random() * logoCount) + 1; // 1 to 6
       const logoImg = document.getElementById('random-logo');
 
       logoImg.src = `/image/logo${randomIndex}.jpeg`;
